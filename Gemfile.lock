@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/codebrew/backbone-rails.git
+  revision: 2d98d7157767dc04b00cac3f822f9576283ba921
+  specs:
+    rails-backbone (1.1.2)
+      coffee-script
+      ejs
+      jquery-rails
+      railties
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,6 +46,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.2.2)
     hike (1.2.3)
@@ -112,6 +123,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.1.8)
+  rails-backbone!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
