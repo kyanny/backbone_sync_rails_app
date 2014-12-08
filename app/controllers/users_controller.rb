@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   protect_from_forgery
 
+  before_action :debug_print
+
   def index
     render json: {ok: true}, status: 200
   end
@@ -19,5 +21,11 @@ class UsersController < ApplicationController
 
   def destroy
     render json: {ok: true}, status: 204
+  end
+
+  private
+
+  def debug_print
+    p request.body.read
   end
 end
